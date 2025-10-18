@@ -74,24 +74,43 @@ body{
 }
 
 /* Projects grid */
-.projects-section{
-  padding:30px 6%;
-  text-align:center;
+.projects-section {
+  text-align: center;
+  margin-top: 20px; /* dikurangi agar tidak terlalu jauh dari header */
+  margin-bottom: 0; /* hilangkan jarak bawah berlebih */
 }
-.section-title{
-  font-size:34px;
-  margin:10px 0 26px;
-  letter-spacing:2px;
+
+.projects-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px; /* dikurangi dari default (biasanya 30-40px) */
+  color: #fff;
+  letter-spacing: 1px;
 }
-.projects-grid {
+
+/* Grid proyek */
+.projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px; /* Jarak antar kartu pas */
+  gap: 25px;
   justify-items: center;
   align-items: start;
   max-width: 950px;
   margin: 0 auto;
-  padding: 30px 15px;
+  padding: 10px 15px; /* dikurangi dari 30px → 10px agar lebih rapat ke judul */
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  .projects-section h2 {
+    margin-bottom: 10px;
+  }
+
+  .projects {
+    gap: 18px;
+    padding: 8px 10px;
+  }
+}
 }
 
 /* Kartu proyek */
