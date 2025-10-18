@@ -1,1 +1,257 @@
-body{font-family:sans-serif;background:#6b00ff;color:#fff;text-align:center;} .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:20px;} img{width:100%;border-radius:12px;} .cta-btn{background:#fff;color:#6b00ff;padding:10px 20px;border-radius:20px;border:none;cursor:pointer;} .project-card{transition:transform .3s ease;}.project-card:hover{transform:scale(1.05);} .overlay{display:none;} .overlay.visible{display:block;} .detail-card img{max-width:100%;border-radius:12px;} .whatsapp-btn{display:inline-block;background:#25D366;color:#fff;padding:8px 16px;border-radius:20px;text-decoration:none;margin-top:10px;}
+:root{
+  --bg1: #6b00ff;
+  --bg2: #2a0b5a;
+  --card-radius: 20px;
+  --accent: #ffffff;
+  --font-family: "Alte Haas Grostesk", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Load local font (place font file in /fonts/ if available) */
+@font-face{
+  font-family: "Alte Haas Grostesk";
+  src: url("fonts/AlteHaasGrostesk.woff2") format("woff2"),
+       url("fonts/AlteHaasGrostesk.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: var(--font-family);
+  background: linear-gradient(180deg,var(--bg1),var(--bg2));
+  color: #fff;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+/* Header */
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+}
+.brand{
+  font-weight:700;
+  font-size:28px;
+}
+.brand span{font-weight:400}
+
+.nav .nav-btn, .nav-link{
+  background:transparent;
+  border:2px solid rgba(255,255,255,0.6);
+  color:var(--accent);
+  padding:10px 18px;
+  border-radius:999px;
+  margin-left:10px;
+  cursor:pointer;
+  font-weight:700;
+  letter-spacing:0.6px;
+  transition:transform .18s ease, background .18s ease, box-shadow .18s ease;
+}
+.nav .nav-btn:hover, .nav-link:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Hero */
+.hero{
+  padding:30px 20px;
+  text-align:center;
+}
+.hero .lead{
+  max-width:900px;
+  margin:0 auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  padding:18px 22px;
+  border-radius:12px;
+  color:#fff;
+  font-weight:500;
+}
+
+/* Projects grid */
+.projects-section{
+  padding:30px 6%;
+  text-align:center;
+}
+.section-title{
+  font-size:34px;
+  margin:10px 0 26px;
+  letter-spacing:2px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Card design */
+.project-card{
+  width:100%;
+  max-width:300px;
+  background:transparent;
+}
+.card-click{
+  display:block;
+  text-align:left;
+  border:none;
+  background:#fff;
+  color:#2a0b5a;
+  border-radius:28px;
+  overflow:hidden;
+  padding:10px;
+  width:100%;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);
+  transform:translateY(0);
+  transition: all .28s cubic-bezier(.2,.9,.3,1);
+}
+.card-click:focus{outline:3px solid rgba(255,255,255,0.14)}
+.card-photo{
+  border-radius:18px;
+  overflow:hidden;
+  height:180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.card-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition: transform .7s ease;
+}
+.card-click:hover{
+  transform:translateY(-8px);
+}
+.card-click:hover img{
+  transform:scale(1.06);
+}
+.card-caption{
+  padding:12px 8px 6px;
+  text-align:center;
+  font-size:14px;
+}
+
+/* CTA */
+.cta{
+  padding:36px 6%;
+  text-align:center;
+}
+.cta p{max-width:900px;margin:0 auto 18px}
+.cta-btn{
+  background:#fff;
+  color:var(--bg2);
+  border:none;
+  padding:12px 24px;
+  border-radius:999px;
+  font-weight:700;
+  box-shadow:0 8px 26px rgba(0,0,0,0.25);
+  cursor:pointer;
+  transition:transform .2s ease;
+}
+.cta-btn:hover{transform:translateY(-4px)}
+
+/* Footer */
+.site-footer{
+  padding:24px;
+  text-align:center;
+  border-radius:999px;
+  background:linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  margin:40px 6%;
+  font-size:14px;
+}
+
+/* overlay */
+.overlay{
+  position:fixed;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(0,0,0,0.6);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .25s ease;
+}
+.overlay.visible{opacity:1; pointer-events:auto}
+.overlay-content{
+  background:#fff;
+  color:#2a0b5a;
+  padding:28px;
+  border-radius:18px;
+  max-width:720px;
+  width:90%;
+}
+
+/* Detail page */
+.detail-page .container{padding:30px 6%}
+.detail-card{
+  display:flex;
+  gap:28px;
+  align-items:flex-start;
+  background: rgba(255,255,255,0.05);
+  padding:18px;
+  border-radius:18px;
+  color:#fff;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.detail-visual{flex:1 1 420px; min-width:260px; border-radius:12px; overflow:hidden}
+.detail-visual img{width:100%; height:100%; object-fit:cover; display:block}
+.detail-body{flex:1 1 320px; min-width:260px}
+.detail-body h1{margin-top:0}
+.meta{opacity:0.9; margin:6px 0}
+.price{font-size:18px; margin:12px 0}
+.detail-actions{display:flex; gap:12px; margin-top:18px; flex-wrap:wrap}
+.whatsapp-btn, .back-btn{
+  padding:10px 16px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+}
+.whatsapp-btn{
+  background:#25D366;
+  color:#063b1f;
+}
+.back-btn{background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.14)}
+
+/* responsive */
+@media (max-width:1000px){
+  .projects-grid{grid-template-columns: repeat(2,1fr)}
+  .site-header{padding:14px 20px}
+}
+@media (max-width:700px){
+  .projects-grid{grid-template-columns: 1fr}
+  .hero .lead{font-size:15px}
+  .brand{font-size:22px}
+  .detail-card{flex-direction:column}
+  .detail-visual{height:260px}
+  .site-footer{margin:20px 6%}
+}
+@font-face {
+  font-family: 'Alte Haas Grotesk';
+  src: url('fonts/AlteHaasGroteskRegular.woff2') format('woff2'),
+       url('fonts/AlteHaasGroteskRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Alte Haas Grotesk', sans-serif;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
