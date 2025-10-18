@@ -42,9 +42,9 @@
       const overlay = document.getElementById('overlay');
       const panel = document.getElementById('overlay-content');
       if (kind === 'about') {
-        panel.innerHTML = `<h2>Tentang Kami</h2><p>Uncle Property — Partner terpercaya Anda dalam investasi tanah kavling eksklusif di Bali.</p> <a class="whatsapp-btn" href="index.html">Kembali</a>`;
+        panel.innerHTML = `<h2>Tentang Kami</h2><p>Uncle Property — Partner terpercaya Anda dalam investasi tanah kavling eksklusif di Bali.</p> <button class="close-overlay">Kembali</button>`;
       } else if (kind === 'contact') {
-        panel.innerHTML = `<h2>Kontak</h2><p>Nomor WhatsApp: <strong>0895-3652-82575</strong></p><button id="whatsapp-direct">Hubungi via WhatsApp</button><button class="close-overlay">Tutup</button>`;
+        panel.innerHTML = `<h2>Kontak</h2><p>Jika ada pertanyaan perihal lahan kami dan lainnya silahkan hubungi <strong>nomer dibawah ini.</strong></p><button id="whatsapp-direct">Hubungi via WhatsApp</button><button class="close-overlay">Tutup</button>`;
         panel.querySelector('#whatsapp-direct').addEventListener('click', () => {
           const phone = '62895365282575';
           const text = encodeURIComponent('Halo Uncle Property, saya ingin bertanya.');
