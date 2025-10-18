@@ -42,8 +42,20 @@
       const overlay = document.getElementById('overlay');
       const panel = document.getElementById('overlay-content');
       if (kind === 'about') {
-        panel.innerHTML = `<h2>Tentang Kami</h2><p>Uncle Property — Partner terpercaya Anda dalam investasi tanah kavling eksklusif di Bali.
-                           <br />Since 2023</p> <button class="close-overlay">Kembali</button>`;
+        panel.innerHTML = `<h2>Kami adalah partner terpercaya Anda dalam investasi tanah kavling eksklusif di Bali.
+                           <br />Dengan pengalaman dan komitmen tinggi dalam pengembangan properti, kami menghadirkan proyek-proyek kavling yang bernilai investasi tinggi, legalitas jelas, dan lokasi strategis.
+                           <br />Kami percaya bahwa membeli tanah bukan sekadar transaksi, melainkan langkah membangun masa depan. Karena itu, setiap proyek yang kami tawarkan telah melalui proses seleksi lokasi, perencanaan matang, serta verifikasi dokumen hukum yang ketat.
+                           <br />Dengan pelayanan yang jujur, transparan, dan profesional, kami siap membantu Anda menemukan kavling terbaik — baik untuk hunian pribadi, villa sewa, maupun investasi jangka panjang.
+                           <br />
+                           <br /><strong>Mengapa memilih kami?</strong
+                           <br />
+                           <br />Legalitas aman & sertifikat jelas (SHM)
+                           <br />Lokasi kavling strategis dan mudah diakses
+                           <br />Harga kompetitif dengan potensi nilai jual tinggi
+                           <br />Tim profesional siap mendampingi hingga proses balik nama selesai
+                           <br />
+                           <br />Kami tidak hanya menjual tanah — kami membantu Anda membangun kepercayaan dan masa depan
+                           <br /></p> <button class="close-overlay">Kembali</button>`;
       } else if (kind === 'contact') {
         panel.innerHTML = `<h2>Kontak</h2><p>Jika ada pertanyaan perihal lahan kami dan lainnya silahkan hubungi <strong>nomer dibawah ini.</strong></p><button id="whatsapp-direct">Hubungi via WhatsApp</button><button class="close-overlay">Tutup</button>`;
         panel.querySelector('#whatsapp-direct').addEventListener('click', () => {
