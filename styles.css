@@ -57,6 +57,83 @@ body{
   transform:translateY(-3px);
   box-shadow:0 6px 20px rgba(0,0,0,0.25);
 }
+/* NAVBAR UTAMA */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+/* JUDUL SITUS */
+nav h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* MENU BUTTON */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: white;
+  color: #7b2ff7;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  nav h1 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-buttons button {
+    width: 80%;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+}
+
+/* RESPONSIVE UNTUK HP KECIL (LAYAR <480PX) */
+@media (max-width: 480px) {
+  .nav-buttons button {
+    width: 90%;
+    font-size: 15px;
+    padding: 9px 0;
+  }
+
+  nav h1 {
+    font-size: 18px;
+  }
+}
+
 
 /* Hero */
 .hero{
