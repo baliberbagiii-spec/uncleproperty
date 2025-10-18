@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Uncle Property — Proyek</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('btn-about').addEventListener('click', () => showPanel('about'));
+      document.getElementById('btn-contact').addEventListener('click', () => showPanel('contact'));
+      document.getElementById('hubungi-kami').addEventListener('click', () => {
+        const phone = '62895365282575';
+        const text = encodeURIComponent('Halo Uncle Property, saya tertarik dengan properti Anda. Mohon info lebih lanjut.');
+        window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+      });
+      renderGrid();
+    });
+
+    function renderGrid() {
+      const grid = document.getElementById('projects-grid');
+      grid.innerHTML = '';
+      projects.forEach(p => {
+        const card = document.createElement('article');
+        card.className = 'project-card';
+        card.innerHTML = `
+          <button class="card-click" data-id="${p.id}" aria-label="Lihat detail ${p.title}">
+            <div class="card-photo"><img src="${p.image}" loading="lazy" alt="${p.title}"></div>
+            <div class="card-caption"><strong>${p.title}</strong><span>${p.location}</span></div>
+          </button>
+        `;
+        card.querySelector('.card-click').addEventListener('click', (e) => {
+          const id = e.currentTarget.dataset.id;
+          window.open(`detail.html?id=${id}`, '_blank');
+        });
+        grid.appendChild(card);
+      });
+    }
+
+    function showPanel(kind) {
+      const overlay = document.getElementById('overlay');
+      const panel = document.getElementById('overlay-content');
+      if (kind === 'about') {
+        panel.innerHTML = `<h2>Tentang Kami</h2><p>Uncle Property — Partner terpercaya Anda dalam investasi tanah kavling eksklusif di Bali.</p><button class="close-overlay">Tutup</button>`;
+      } else if (kind === 'contact') {
+        panel.innerHTML = `<h2>Kontak</h2><p>Nomor WhatsApp: <strong>0895-3652-82575</strong></p><button id="whatsapp-direct">Hubungi via WhatsApp</button><button class="close-overlay">Tutup</button>`;
+        panel.querySelector('#whatsapp-direct').addEventListener('click', () => {
+          const phone = '62895365282575';
+          const text = encodeURIComponent('Halo Uncle Property, saya ingin bertanya.');
+          window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+        });
+      }
+      overlay.classList.add('visible');
+      overlay.querySelectorAll('.close-overlay').forEach(b => b.addEventListener('click', () => overlay.classList.remove('visible')));
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Uncle <span>Property</span></div>
+    <nav class="nav">
+      <button id="btn-about" class="nav-btn">ABOUT US</button>
+      <button id="btn-contact" class="nav-btn">CONTACT</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="lead">Temukan peluang investasi eksklusif di pulau impian, Bali.</p>
+      </div>
+    </section>
+    <section class="projects-section">
+      <h1 class="section-title">PROYEK KAMI</h1>
+      <div id="projects-grid" class="projects-grid"></div>
+    </section>
+    <section class="cta">
+      <p>Tertarik memiliki properti impian di Bali? Hubungi kami!</p>
+      <button id="hubungi-kami" class="cta-btn">HUBUNGI KAMI</button>
+    </section>
+  </main>
+  <footer class="site-footer">© 2025 Uncle Property</footer>
+  <div id="overlay" class="overlay"><div id="overlay-content" class="overlay-content"></div></div>
+</body>
+</html>
