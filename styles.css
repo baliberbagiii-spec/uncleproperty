@@ -86,21 +86,16 @@ body{
 .projects-grid{
   display:grid;
   grid-template-columns: repeat(3,1fr);
-  gap:20px;
+  gap:28px;
   align-items:start;
   justify-items:center;
 }
 
 /* Card design */
 .project-card{
- display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px; /* atur jarak antar gambar, bisa ubah jadi 30–60px sesuai selera */
-  justify-items: center;
-  align-items: start;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 20px; /* beri ruang atas bawah */
+  width:100%;
+  max-width:300px;
+  background:transparent;
 }
 .card-click{
   display:block;
@@ -200,7 +195,7 @@ body{
 .detail-page .container{padding:30px 6%}
 .detail-card{
   display:flex;
-  gap:25px;
+  gap:28px;
   align-items:flex-start;
   background: rgba(255,255,255,0.05);
   padding:18px;
@@ -240,14 +235,4 @@ body{
   .detail-card{flex-direction:column}
   .detail-visual{height:260px}
   .site-footer{margin:20px 6%}
-}
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px; /* atur jarak antar gambar, bisa ubah jadi 30–60px sesuai selera */
-  justify-items: center;
-  align-items: start;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px; /* beri ruang atas bawah */
 }
