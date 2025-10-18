@@ -86,7 +86,7 @@ body{
 .projects-grid{
   display:grid;
   grid-template-columns: repeat(3,1fr);
-  gap:20px;
+  gap:10px;
   align-items:start;
   justify-items:center;
 }
@@ -95,12 +95,12 @@ body{
 .project-card{
  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px; /* atur jarak antar gambar, bisa ubah jadi 30–60px sesuai selera */
+  gap: 15px; /* atur jarak antar gambar, bisa ubah jadi 30–60px sesuai selera */
   justify-items: center;
   align-items: start;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 20px; /* beri ruang atas bawah */
+  padding: 30px 20px; /* beri ruang atas bawah */
 }
 .card-click{
   display:block;
