@@ -42,7 +42,7 @@
       const overlay = document.getElementById('overlay');
       const panel = document.getElementById('overlay-content');
       if (kind === 'about') {
-        panel.innerHTML = `<h2>Tentang Kami</h2><p>Uncle Property — Partner terpercaya Anda dalam investasi tanah kavling eksklusif di Bali.</p><button class="nav-link">Tutup</button>`;
+        panel.innerHTML = `<h2>Tentang Kami</h2><p>Uncle Property — Partner terpercaya Anda dalam investasi tanah kavling eksklusif di Bali.</p><button class="close-overlay">Tutup</button>`;
       } else if (kind === 'contact') {
         panel.innerHTML = `<h2>Kontak</h2><p>Nomor WhatsApp: <strong>0895-3652-82575</strong></p><button id="whatsapp-direct">Hubungi via WhatsApp</button><button class="close-overlay">Tutup</button>`;
         panel.querySelector('#whatsapp-direct').addEventListener('click', () => {
