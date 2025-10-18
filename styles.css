@@ -86,7 +86,7 @@ body{
 .projects-grid{
   display:grid;
   grid-template-columns: repeat(3,1fr);
-  gap:28px;
+  gap:20px;
   align-items:start;
   justify-items:center;
 }
@@ -195,7 +195,7 @@ body{
 .detail-page .container{padding:30px 6%}
 .detail-card{
   display:flex;
-  gap:28px;
+  gap:25px;
   align-items:flex-start;
   background: rgba(255,255,255,0.05);
   padding:18px;
