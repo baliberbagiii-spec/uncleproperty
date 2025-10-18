@@ -83,24 +83,19 @@ body{
   margin:10px 0 26px;
   letter-spacing:2px;
 }
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 60px; /* atur jarak antar gambar, bisa ubah jadi 30–60px sesuai selera */
-  justify-items: center;
-  align-items: start;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px; /* beri ruang atas bawah */
+.projects-grid{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:28px;
+  align-items:start;
+  justify-items:center;
 }
 
 /* Card design */
-.project-card {
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 20px; /* tambahan jarak vertikal */
+.project-card{
+  width:100%;
+  max-width:300px;
+  background:transparent;
 }
 .card-click{
   display:block;
@@ -216,24 +211,16 @@ body{
 .meta{opacity:0.9; margin:6px 0}
 .price{font-size:18px; margin:12px 0}
 .detail-actions{display:flex; gap:12px; margin-top:18px; flex-wrap:wrap}
-.detail-buttons {
-  display: flex;
-  justify-content: center;  /* tombol berada di tengah secara horizontal */
-  align-items: center;
-  gap: 15px;                 /* jarak antar tombol */
-  margin-top: 20px;
+.whatsapp-btn, .back-btn{
+  padding:10px 16px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
 }
-.whatsapp-btn,
-.back-button {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.whatsapp-btn{
+  background:#25D366;
+  color:#063b1f;
 }
-
-.whatsapp-btn:hover,
-.back-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
 .back-btn{background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.14)}
 
 /* responsive */
@@ -249,29 +236,3 @@ body{
   .detail-visual{height:260px}
   .site-footer{margin:20px 6%}
 }
-@font-face {
-  font-family: 'Alte Haas Grotesk';
-  src: url('fonts/AlteHaasGroteskRegular.woff2') format('woff2'),
-       url('fonts/AlteHaasGroteskRegular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: 'Alte Haas Grotesk', sans-serif;
-}
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;
-}
-.detail-buttons {
-  display: flex;
-  justify-content: center;  /* tombol berada di tengah secara horizontal */
-  align-items: center;
-  gap: 15px;                 /* jarak antar tombol */
-  margin-top: 20px;
-}
-
-
