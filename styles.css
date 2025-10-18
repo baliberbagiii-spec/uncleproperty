@@ -86,7 +86,7 @@ body{
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 90px; /* atur jarak antar gambar, bisa ubah jadi 30–60px sesuai selera */
+  gap: 60px; /* atur jarak antar gambar, bisa ubah jadi 30–60px sesuai selera */
   justify-items: center;
   align-items: start;
   max-width: 1000px;
