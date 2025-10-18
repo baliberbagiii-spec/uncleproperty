@@ -104,13 +104,16 @@ body{
   max-width: 320px;
   display: flex;
   flex-direction: column;
-  transition: none; /* Hapus animasi */
+  transition: none !important; /* pastikan tidak ada animasi */
+  transform: none !important;
 }
 
-/* Hapus efek hover sepenuhnya */
-.project-card:hover {
-  transform: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* Pastikan tidak ada efek hover sama sekali */
+.project-card:hover,
+.project-card:focus,
+.project-card:active {
+  transform: none !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Gambar tetap rapi */
