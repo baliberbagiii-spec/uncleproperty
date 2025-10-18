@@ -36,7 +36,7 @@ const projects = [
   {
     id: 'los-pantai',
     title: 'Los Pantai Lebih',
-    location: 'Gianyar, Bali',
+    location: 'Los Pantai Gianyar, Gianyar, Bali',
     image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80&auto=format&fit=crop',
     price: 'Rp 950.000.000',
     description: 'Terletak di dekat Pantai Lebih, kawasan ini menghadirkan suasana tenang dengan panorama laut yang mempesona.<br />Akses mudah menuju Sanur dan Ubud menjadikannya lokasi strategis untuk villa sewa atau hunian tropis pribadi.<br />Investasi tanah di Pantai Lebih adalah pilihan tepat bagi Anda yang menginginkan ketenangan sekaligus potensi pertumbuhan nilai tinggi.'
