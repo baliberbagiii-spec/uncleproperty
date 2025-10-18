@@ -100,31 +100,32 @@ body{
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 320px;
   display: flex;
   flex-direction: column;
+  transition: none; /* Hapus animasi */
 }
 
+/* Hapus efek hover sepenuhnya */
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Gambar agar rapat dengan tulisan */
+/* Gambar tetap rapi */
 .project-card img {
   width: 100%;
   height: 190px;
   object-fit: cover;
   display: block;
-  border-bottom: 3px solid #6c1df0; /* garis pemisah lembut */
+  border-bottom: 3px solid #6c1df0;
 }
 
 /* Bagian teks proyek */
 .project-info {
   background: #fff;
-  padding: 10px 14px; /* rapat tapi tetap nyaman dibaca */
+  padding: 10px 14px;
   text-align: center;
 }
 
@@ -140,6 +141,7 @@ body{
   color: #333;
   margin-top: 3px;
 }
+
 
 }
 
