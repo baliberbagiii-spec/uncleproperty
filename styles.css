@@ -96,35 +96,51 @@ body{
 
 /* Kartu proyek */
 .project-card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: #7b2ff7;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 300px; /* Semua kartu akan memiliki lebar yang sama */
-  height: 260px; /* Tinggi seragam */
+  max-width: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card img {
-  width: 100%;
-  height: 160px; /* Pastikan semua gambar tinggi sama */
-  object-fit: cover;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
+/* Gambar agar rapat dengan tulisan */
+.project-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 3px solid #6c1df0; /* garis pemisah lembut */
+}
+
+/* Bagian teks proyek */
 .project-info {
-  padding: 12px;
-  font-size: 0.9rem;
-  color: #fff;
+  background: #fff;
+  padding: 10px 14px; /* rapat tapi tetap nyaman dibaca */
+  text-align: center;
+}
+
+.project-info h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+}
+
+.project-info p {
+  font-size: 0.85rem;
+  color: #333;
+  margin-top: 3px;
+}
+
 }
 
 /* Responsif */
