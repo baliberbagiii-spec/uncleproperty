@@ -265,7 +265,7 @@ main {
   gap: 15px;                 /* jarak antar tombol */
   margin-top: 20px;
 }
-.whatsapp-btnn,
+.whatsapp-btn,
 .back-button {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
