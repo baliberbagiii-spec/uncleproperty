@@ -86,18 +86,21 @@ body{
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 40px; /* atur jarak antar gambar, bisa ubah jadi 30–60px sesuai selera */
   justify-items: center;
   align-items: start;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 40px 20px; /* beri ruang atas bawah */
 }
 
 /* Card design */
-.project-card{
-  width:100%;
-  max-width:300px;
-  background:transparent;
+.project-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* tambahan jarak vertikal */
 }
 .card-click{
   display:block;
