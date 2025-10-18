@@ -265,4 +265,15 @@ main {
   gap: 15px;                 /* jarak antar tombol */
   margin-top: 20px;
 }
+.whatsapp-btnn,
+.back-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-btn:hover,
+.back-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
 
