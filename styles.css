@@ -216,6 +216,13 @@ body{
 .meta{opacity:0.9; margin:6px 0}
 .price{font-size:18px; margin:12px 0}
 .detail-actions{display:flex; gap:12px; margin-top:18px; flex-wrap:wrap}
+.detail-buttons {
+  display: flex;
+  justify-content: center;  /* tombol berada di tengah secara horizontal */
+  align-items: center;
+  gap: 15px;                 /* jarak antar tombol */
+  margin-top: 20px;
+}
 .whatsapp-btn,
 .back-button {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
