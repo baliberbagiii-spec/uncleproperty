@@ -7,19 +7,64 @@
   <link rel="stylesheet" href="styles.css">
   <script src="data.js" defer></script>
   <script>
-    function qparam(name){return new URLSearchParams(window.location.search).get(name);}
-    document.addEventListener('DOMContentLoaded',()=>{
-      const id=qparam('id');const c=document.getElementById('detail-root');
-      const p=projects.find(x=>x.id===id);
-      if(!p){c.innerHTML='<p>Proyek tidak ditemukan.</p>';return;}
-      document.title=p.title+' — Uncle Property';
-      c.innerHTML=`<article class="detail-card"><div class="detail-visual"><img src="${p.image}" alt="${p.title}" /></div><div class="detail-body"><h1>${p.title}</h1><p>${p.location}</p><p>${p.price}</p><p>${p.description}</p><a class="whatsapp-btn" href="https://wa.me/62895365282575?text=${encodeURIComponent('Halo, saya tertarik dengan '+p.title)}" target="_blank">Hubungi via WhatsApp</a><a class="back-btn" href="index.html">Kembali</a></div></article>`;
+    // parse ?id= and render project
+    function qparam(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const id = qparam('id');
+      const container = document.getElementById('detail-root');
+
+      if (!id) {
+        container.innerHTML = '<p>Proyek tidak ditemukan. Pastikan URL berisi id proyek.</p>';
+        return;
+      }
+      const p = projects.find(x => x.id === id);
+      if (!p) {
+        container.innerHTML = '<p>Proyek tidak ditemukan.</p>';
+        return;
+      }
+
+      document.title = p.title + ' — Uncle Property';
+
+      container.innerHTML = `
+        <article class="detail-card">
+          <div class="detail-visual">
+            <img src="${p.image}" alt="${p.title}" />
+          </div>
+          <div class="detail-body">
+            <h1>${p.title}</h1>
+            <p class="meta">${p.location} • Luas: ${p.area}</p>
+            <p class="price">Harga: <strong>${p.price}</strong></p>
+            <p class="desc">${p.description}</p>
+            <div class="detail-actions">
+              <a class="whatsapp-btn" href="https://wa.me/62895365282575?text=${encodeURIComponent('Halo, saya tertarik dengan ' + p.title + ' — ' + p.price)}" target="_blank" rel="noopener">Hubungi via WhatsApp</a>
+              <a class="back-btn" href="index.html">Kembali</a>
+            </div>
+          </div>
+        </article>
+      `;
     });
   </script>
 </head>
 <body class="detail-page">
-  <header class="site-header"><div class="brand">Uncle <span>Property</span></div><nav><a class="nav-link" href="index.html">Beranda</a></nav></header>
-  <main class="container"><div id="detail-root"></div></main>
-  <footer class="site-footer">© 2025 Uncle Property</footer>
+  <header class="site-header">
+    <div class="brand">Uncle <span>Property</span></div>
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Beranda</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div id="detail-root" class="detail-root">
+      <!-- rendered by JS -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    Semua Hak Dilindungi © 2025 Uncle Property
+  </footer>
 </body>
 </html>
