@@ -316,13 +316,15 @@ nav h1 {
 .cta-btn:hover{transform:translateY(-4px)}
 
 /* Footer */
-.site-footer{
-  padding:24px;
-  text-align:center;
-  border-radius:999px;
-  background:linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-  margin:40px 6%;
-  font-size:14px;
+.site-footer {
+  flex-shrink: 0;
+  text-align: center;
+  color: white;
+  padding: 18px 0;
+  font-size: 14px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border-radius: 999px;
+  margin: 0 6%;
 }
 
 /* overlay */
