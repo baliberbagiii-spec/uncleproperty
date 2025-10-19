@@ -166,7 +166,8 @@ nav h1 {
   height: 190px;
   object-fit: cover;
   display: block;
-  border-bottom: 3px solid #FFB22C;
+  border-bottom: none; /* ✅ garis oranye dihapus */
+}
 }
 .project-info {
   background: #fff;
