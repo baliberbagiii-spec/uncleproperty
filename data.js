@@ -24,9 +24,9 @@ const projects = [
     price: "900 juta / are",
     description: "Lokasi strategis dekat pusat kota dan pantai.",
     images: [
-      "images/muding1.jpg",
-      "images/muding2.jpg",
-      "images/muding3.jpg"
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop"
     ]
   },
   {
