@@ -34,14 +34,6 @@ const projects = [
     description: 'Kawasan Bongan, Tabanan dikenal dengan udara sejuk dan pemandangan alam yang hijau.<br />Lahan ini menawarkan suasana pedesaan yang asri, cocok untuk villa pribadi, resort, atau rumah bernuansa tropis.<br />Investasi aman dan menjanjikan di daerah yang sedang berkembang pesat di Bali bagian barat.'
   },
   {
-    id: 'taman-jimbaran',
-    title: 'Jimbaran',
-    location: 'Jl. Taman Jimbaran, Jimbaran, Bali',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop',
-    price: 'Rp 550.000.000',
-    description: 'Kawasan Jimbaran merupakan salah satu area premium di Bali yang terkenal dengan pantai berpasir putih dan sunset menawan.<br />Tanah kavling di sini sangat potensial untuk pembangunan villa mewah, bisnis properti, maupun investasi eksklusif.<br />Nilai tanah di Jimbaran terus meningkat — menjadikannya aset terbaik di kawasan selatan Bali.'
-  },
-  {
     id: 'los-pantai',
     title: 'Los Pantai Lebih',
     location: 'Los Pantai Gianyar, Gianyar, Bali',
