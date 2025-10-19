@@ -258,7 +258,7 @@ nav h1 {
   text-align:left;
   border:none;
   background:#fff;
-  color:#000000;
+  color:#ffb22c;
   border-radius:28px;
   overflow:hidden;
   padding:10px;
@@ -340,7 +340,7 @@ nav h1 {
 .overlay.visible{opacity:1; pointer-events:auto}
 .overlay-content{
   background:#fff;
-  color:#FAB12F;
+  color:#000000;
   padding:28px;
   border-radius:18px;
   max-width:720px;
