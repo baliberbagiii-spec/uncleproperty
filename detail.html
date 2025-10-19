@@ -38,12 +38,12 @@
           <div class="detail-body">
             <h1>Kavling – ${p.title}</h1>
             <p class="meta">${p.location}</p>
-            <p class="price">Harga: <strong>${p.price}</strong></p>
+            <p class="price">Harga: <strong><i>${p.price}</i></strong></p>
             <p class="desc">${p.description}</p>
             <br />
             <h2>Untuk info lebih lanjut hubungi</h2>
             <div class="detail-actions"><center>
-              <a class="whatsapp-btn" href="https://wa.me/62895365282575?text=${encodeURIComponent('Halo, saya tertarik dengan ' + p.title + ' — ' + p.price)}" target="_blank" rel="noopener">Hubungi via WhatsApp</a>
+              <a class="whatsapp-btn" href="https://wa.me/62895365282575?text=${encodeURIComponent('Halo, saya tertarik dengan kavling ' + p.title+' tolong berikan saya informasi lengkapnya.')}" target="_blank" rel="noopener">WhatsApp</a>
             </div>
           </div>
         </article>
@@ -55,7 +55,9 @@
   <header class="site-header">
     <div class="brand">Uncle <span>Property</span></div>
      <nav class="nav">
-      <a class="nav-link" href="index.html">Kembali</a>
+      <!-- <a class="nav-link" href="index.html">Kembali</a> -->
+	  <button onclick="window.close()">Beranda</button>
+	
     </nav>
   </header>
 
@@ -66,7 +68,7 @@
   </main>
 
   <footer class="site-footer">
-    Semua Hak Dilindungi © 2025 Uncle Property
+    Semua Hak Dilindungi <strong>© 2025 Uncle Property</strong>
   </footer>
 </body>
 </html>
