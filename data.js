@@ -18,12 +18,16 @@ const projects = [
     description: 'Nikmati suasana tenang di kawasan Yeh Gangga, hanya beberapa menit dari pantai yang indah.<br />Lahan ini menawarkan pemandangan alami khas pesisir barat Bali dengan akses jalan yang sudah bagus<br />Cocok untuk investasi jangka panjang, pembangunan villa, atau rumah liburan dengan potensi nilai tanah yang terus meningkat.'
   },
   {
-    id: 'jl-muding',
-    title: 'Muding',
-    location: 'Jl. Muding Mekar, Kerobokan Kaja, Bali',
-    image: 'https://i.postimg.cc/L8hBStk0/2.jpg',
-    price: 'Rp 950.000.000 / are',
-    description: 'Terletak di Jl. Muding Mekar, kawasan berkembang yang strategis dekat pusat kota dan Canggu Lingkungan tenang namun tetap mudah dijangkau dari area komersial dan tempat wisata.<br />Pilihan ideal bagi Anda yang mencari kavling untuk hunian modern atau investasi properti dengan prospek cerah.'
+    id: "muding",
+    title: "Muding Mekar",
+    location: "Kerobokan, Badung",
+    price: "900 juta / are",
+    description: "Lokasi strategis dekat pusat kota dan pantai.",
+    images: [
+      "images/muding1.jpg",
+      "images/muding2.jpg",
+      "images/muding3.jpg"
+    ]
   },
   {
     id: 'bongan',
