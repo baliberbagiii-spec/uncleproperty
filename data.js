@@ -25,8 +25,8 @@ const projects = [
     description: "Lokasi strategis dekat pusat kota dan pantai.",
     images: [
       'https://i.postimg.cc/B6yR5T5L/yeh.jpg',
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop'
+      'https://i.postimg.cc/B6yR5T5L/yeh.jpg',
+      'https://i.postimg.cc/B6yR5T5L/yeh.jpg'
     ]
   },
   {
