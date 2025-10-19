@@ -17,15 +17,25 @@
 }
 
 * { box-sizing: border-box; }
-html, body { height: 100%; }
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+body {
   font-family: var(--font-family);
   background: #6b00ff;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
+}
+
+/* Pastikan konten utama mendorong footer ke bawah */
+main {
+  flex: 1;
 }
 
 /* HEADER */
@@ -166,8 +176,7 @@ nav h1 {
   height: 190px;
   object-fit: cover;
   display: block;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.08); /* lembut & netral */
-}
+  border-bottom: none !important;
 }
 .project-info {
   background: #fff;
@@ -205,14 +214,15 @@ nav h1 {
 }
 .cta-btn:hover { transform: translateY(-4px); }
 
-/* FOOTER */
+/* FOOTER - Sticky di bawah */
 .site-footer {
-  padding: 24px;
   text-align: center;
-  border-radius: 999px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-  margin: 40px 6%;
+  color: white;
+  padding: 18px 0;
   font-size: 14px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border-radius: 999px;
+  margin: 30px 6% 0;
   position: relative;
 }
 
@@ -229,8 +239,6 @@ nav h1 {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-/* 🟢 Perbaikan ukuran gambar agar seragam di semua halaman detail */
 .detail-visual {
   flex: 1 1 420px;
   min-width: 260px;
@@ -248,8 +256,6 @@ nav h1 {
   display: block;
   border-radius: 12px;
 }
-
-/* Bagian teks kanan */
 .detail-body {
   flex: 1 1 320px;
   min-width: 260px;
