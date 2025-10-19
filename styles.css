@@ -3,7 +3,7 @@
   --bg2: #2a0b5a;
   --card-radius: 20px;
   --accent: #ffffff;
-  --font-family: "Alte Haas Grostesk", "Helvetica Neue","Roboto Black", Arial, sans-serif;
+  --font-family: "Helvetica Neue","Roboto Black", Arial, sans-serif;
 }
 
 /* Load local font (place font file in /fonts/ if available) */
