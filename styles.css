@@ -8,7 +8,7 @@
 
 /* Load local font (place font file in /fonts/ if available) */
 @font-face{
-  font-family: "Roboto Black";
+  font-family: var(--font-family);
   src: url("fonts/robotoblack.woff2") format("woff2"),
        url("fonts/robotoblack.woff") format("woff");
   font-weight: 100 900;
