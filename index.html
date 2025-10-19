@@ -58,6 +58,14 @@
                            <br />Kami tidak hanya menjual tanah — kami membantu Anda membangun kepercayaan dan masa depan
                            <br /></p> <button class="close-overlay">Kembali</button>`;
       } 
+      else if (kind === 'contact') {
+        panel.innerHTML = `<h2>Kontak</h2><p>Jika ada pertanyaan perihal lahan kami dan lainnya silahkan hubungi <strong>nomer dibawah ini.</strong></p><button id="whatsapp-direct">Hubungi via WhatsApp</button><button class="close-overlay">Tutup</button>`;
+        panel.querySelector('#whatsapp-direct').addEventListener('click', () => {
+          const phone = '62895365282575';
+          const text = encodeURIComponent('Halo Uncle Property, saya ingin bertanya.');
+          window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+        });
+      }
       overlay.classList.add('visible');
       overlay.querySelectorAll('.close-overlay').forEach(b => b.addEventListener('click', () => overlay.classList.remove('visible')));
     }
