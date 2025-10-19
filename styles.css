@@ -8,9 +8,9 @@
 
 /* Load local font (place font file in /fonts/ if available) */
 @font-face{
-  font-family: "Alte Haas Grostesk";
-  src: url("fonts/AlteHaasGrostesk.woff2") format("woff2"),
-       url("fonts/AlteHaasGrostesk.woff") format("woff");
+  font-family: "Roboto Black";
+  src: url("fonts/robotoblack.woff2") format("woff2"),
+       url("fonts/robotoblack.woff") format("woff");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
