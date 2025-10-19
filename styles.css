@@ -347,107 +347,19 @@ nav h1 {
   width:90%;
 }
 
-/* DETAIL PAGE */
-.detail-page .container {
-  padding: 30px 6%;
-}
-
-.detail-card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
+/* Detail page */
+.detail-page .container{padding:30px 6%}
+.detail-card{
+  display:flex;
+  gap:28px;
+  align-items:flex-start;
   background: rgba(255,255,255,0.05);
-  padding: 18px;
-  border-radius: 18px;
-  justify-content: center;
-  align-items: flex-start;
+  padding:18px;
+  border-radius:18px;
+  color:#fff;
+  flex-direction:row;
+  flex-wrap:wrap;
 }
-
-/* Area gambar */
-.detail-visual {
-  flex: 1 1 600px;
-  max-width: 700px;
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Gambar seragam dan responsif */
-.detail-visual img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;  /* Menjaga rasio lebar-tinggi */
-  object-fit: cover;     /* Potong proporsional tanpa distorsi */
-  border-radius: 12px;
-  display: block;
-}
-
-/* Detail teks */
-.detail-body {
-  flex: 1 1 350px;
-  min-width: 280px;
-}
-
-.detail-body h1 {
-  margin-top: 0;
-  font-size: 42px;
-  line-height: 1.2;
-}
-
-.meta { opacity: 0.9; margin: 6px 0; }
-.price { font-size: 16px; margin: 12px 0; }
-
-.detail-actions {
-  display: flex;
-  gap: 12px;
-  margin-top: 18px;
-  flex-wrap: wrap;
-}
-
-/* Tombol */
-.whatsapp-btn, .back-btn {
-  padding: 10px 16px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-}
-.whatsapp-btn {
-  background: #25D366;
-  color: #063b1f;
-}
-.back-btn {
-  background: transparent;
-  color: #fff;
-  border: 2px solid rgba(255,255,255,0.14);
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .detail-card {
-    flex-direction: column;
-    align-items: center;
-  }
-  .detail-visual {
-    max-width: 100%;
-  }
-  .detail-visual img {
-    aspect-ratio: 16 / 9;
-    max-height: 400px;
-  }
-}
-
-@media (max-width: 500px) {
-  .detail-visual img {
-    aspect-ratio: 4 / 3; /* Sedikit lebih tinggi di layar kecil */
-    max-height: 320px;
-  }
-  .detail-body h1 {
-    font-size: 28px;
-  }
-}
-
 .detail-visual{flex:1 1 420px; min-width:260px; border-radius:12px; overflow:hidden}
 .detail-visual img{width:100%; height:100%; object-fit:cover; display:block}
 .detail-body{flex:1 1 320px; min-width:260px}
@@ -525,3 +437,55 @@ button:active, .btn:active {
   background-color: #1ebe57;
   box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
 }
+/* ============================= */
+/* BAGIAN DETAIL PROPERTY IMAGE  */
+/* ============================= */
+.detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.detail-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+
+.detail-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 600px; /* batas tinggi agar semua seragam */
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* BAGIAN TEKS KANAN */
+.detail-info {
+  flex: 1;
+  padding: 40px;
+  background-color: #7b2ff7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* RESPONSIVE HANDPHONE */
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+  }
+
+  .detail-image img {
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+  .detail-info {
+    padding: 20px;
+  }
+}
+
