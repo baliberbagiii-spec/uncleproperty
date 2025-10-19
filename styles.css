@@ -21,7 +21,7 @@ html,body{height:100%}
 body{
   margin:0;
   font-family: var(--font-family);
-  background: #ff9d23;
+  background: #6b00ff;
   color: #fff;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
