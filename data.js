@@ -5,7 +5,7 @@ const projects = [
     id: 'purademak',
     title: 'Pura Demak Barat',
     location: 'Jl. Pura Demak Barat, Pemecutan Klod, Denpasar Barat, Bali',
-    image: 'https://images.unsplash.com/photo-1493558103817-58b2924bce98?w=1200&q=80&auto=format&fit=crop',
+    image: 'https://i.postimg.cc/cJQV8mMB/2.jpg',
     price: 'Rp 1.700.000.000 / 100m²',
     description: 'Lahan strategis di kawasan berkembang, dekat pusat kota Denpasar dan area bisnis. Cocok untuk rumah tinggal, kost, atau investasi jangka panjang. Akses jalan lebar, lingkungan nyaman, dan legalitas aman (SHM). Peluang terbaik memiliki aset bernilai tinggi di Denpasar Barat!'
   },
