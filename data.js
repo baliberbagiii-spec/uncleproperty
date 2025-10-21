@@ -29,7 +29,7 @@ const projects = [
     id: 'bongan',
     title: 'Bongan',
     location: 'Jl. Bedugul Asri, Bongan, Tabanan, Bali',
-    image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1760462998188-fad946b9c453?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870',
     price: 'Rp 330.000.000',
     description: 'Kawasan Bongan, Tabanan dikenal dengan udara sejuk dan pemandangan alam yang hijau.<br />Lahan ini menawarkan suasana pedesaan yang asri, cocok untuk villa pribadi, resort, atau rumah bernuansa tropis.<br />Investasi aman dan menjanjikan di daerah yang sedang berkembang pesat di Bali bagian barat.'
   },
@@ -37,7 +37,7 @@ const projects = [
     id: 'los-pantai',
     title: 'Los Pantai Lebih',
     location: 'Los Pantai Lebih, Jl. Bypass Ida Bagus Mantra, Gianyar, Bali',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80&auto=format&fit=crop',
+    image: 'https://i.postimg.cc/vTG29wHs/6.jpg',
     price: 'Rp 950.000.000',
     description: 'Terletak di dekat Pantai Lebih, kawasan ini menghadirkan suasana tenang dengan panorama laut yang mempesona.<br />Akses mudah menuju Sanur dan Ubud menjadikannya lokasi strategis untuk villa sewa atau hunian tropis pribadi.<br />Investasi tanah di Pantai Lebih adalah pilihan tepat bagi Anda yang menginginkan ketenangan sekaligus potensi pertumbuhan nilai tinggi.'
   },
@@ -45,7 +45,7 @@ const projects = [
     id: 'baha-mengwi',
     title: 'Baha, Mengwi',
     location: 'Jl. Soka, Baha, Mengwi, Badung, Bali',
-    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80&auto=format&fit=crop',
+    image: 'https://i.postimg.cc/CKKhFkfw/8.jpg',
     price: 'Rp 320.000.000',
     description: 'Berada di wilayah Baha, Mengwi, lokasi ini menawarkan keseimbangan antara ketenangan desa Bali dan akses mudah ke Denpasar maupun Canggu.<br />Lahan kavling ini memiliki potensi besar untuk hunian, villa, atau investasi jangka panjang dengan nilai jual yang stabil.'
   }
