@@ -21,7 +21,7 @@ const projects = [
     id: 'jl-muding',
     title: 'Muding',
     location: 'Jl. Muding Mekar, Kerobokan Kaja, Bali',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80&auto=format&fit=crop',
+    image: 'https://i.postimg.cc/zf5x41Kj/ee82d77f-1432-4c59-88b4-5f14913de60b.jpg',
     price: 'Rp 950.000.000 / are',
     description: 'Terletak di Jl. Muding Mekar, kawasan berkembang yang strategis dekat pusat kota dan Canggu Lingkungan tenang namun tetap mudah dijangkau dari area komersial dan tempat wisata.<br />Pilihan ideal bagi Anda yang mencari kavling untuk hunian modern atau investasi properti dengan prospek cerah.'
   },
