@@ -13,7 +13,7 @@ const projects = [
     id: 'yeh-gangga',
     title: 'Yeh Gangga',
     location: 'Tabanan, Bali',
-    image: 'https://images.unsplash.com/photo-1493558103817-58b2924bce98?w=1200&q=80&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1760462433147-68ebbd5c832e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1548',
     price: 'Rp 530.000.000 / 100m²',
     description: 'Nikmati suasana tenang di kawasan Yeh Gangga, hanya beberapa menit dari pantai yang indah.<br />Lahan ini menawarkan pemandangan alami khas pesisir barat Bali dengan akses jalan yang sudah bagus<br />Cocok untuk investasi jangka panjang, pembangunan villa, atau rumah liburan dengan potensi nilai tanah yang terus meningkat.'
   },
