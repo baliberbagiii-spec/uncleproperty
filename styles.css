@@ -39,7 +39,7 @@ body {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 40px;
+  padding:40px 40px;
 }
 .brand{
   font-weight:700;
@@ -390,7 +390,7 @@ nav h1 {
 /* responsive */
 @media (max-width:768px){
   .projects-grid{grid-template-columns: repeat(2,1fr)}
-  .site-header{padding:14px 20px}
+  .site-header{padding:18px 20px}
 }
 @media (max-width:700px){
   .projects-grid{grid-template-columns: 1fr}
