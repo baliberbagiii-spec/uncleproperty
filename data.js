@@ -4,6 +4,7 @@ const projects = [
    {
     id: 'purademak',
     title: 'Pura Demak Barat',
+    jenis: 'Tanah Sewa',
     location: 'Jl. Pura Demak Barat, Pemecutan Klod, Denpasar Barat, Bali',
     image: 'https://i.postimg.cc/cJQV8mMB/2.jpg',
     price: 'Rp 1.700.000.000 / 100m²',
@@ -12,6 +13,7 @@ const projects = [
   {
     id: 'yeh-gangga',
     title: 'Yeh Gangga',
+    jenis: 'Tanah Sewa',
     location: 'Tabanan, Bali',
     image: 'https://images.unsplash.com/photo-1760462433147-68ebbd5c832e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1548',
     price: 'Rp 530.000.000 / 100m²',
@@ -20,6 +22,7 @@ const projects = [
   {
     id: 'jl-muding',
     title: 'Muding',
+    jenis: 'Tanah Sewa',
     location: 'Jl. Muding Mekar, Kerobokan Kaja, Bali',
     image: 'https://i.postimg.cc/zf5x41Kj/ee82d77f-1432-4c59-88b4-5f14913de60b.jpg',
     price: 'Rp 950.000.000 / are',
@@ -28,6 +31,7 @@ const projects = [
   {
     id: 'bongan',
     title: 'Bongan',
+    jenis: 'Tanah Sewa',
     location: 'Jl. Bedugul Asri, Bongan, Tabanan, Bali',
     image: 'https://images.unsplash.com/photo-1760462998188-fad946b9c453?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870',
     price: 'Rp 330.000.000',
@@ -36,6 +40,7 @@ const projects = [
   {
     id: 'los-pantai',
     title: 'Los Pantai Lebih',
+    jenis: 'Tanah Sewa',
     location: 'Los Pantai Lebih, Jl. Bypass Ida Bagus Mantra, Gianyar, Bali',
     image: 'https://i.postimg.cc/vTG29wHs/6.jpg',
     price: 'Rp 950.000.000',
@@ -44,6 +49,7 @@ const projects = [
   {
     id: 'baha-mengwi',
     title: 'Baha, Mengwi',
+    jenis: 'Tanah Sewa',
     location: 'Jl. Soka, Baha, Mengwi, Badung, Bali',
     image: 'https://i.postimg.cc/CKKhFkfw/8.jpg',
     price: 'Rp 320.000.000',
