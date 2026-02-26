@@ -39,7 +39,7 @@ body {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:40px 60px;
+  padding:60px 40px;
 }
 .brand{
   font-weight:700;
