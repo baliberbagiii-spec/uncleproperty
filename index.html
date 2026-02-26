@@ -27,7 +27,7 @@
         card.innerHTML = `
           <button class="card-click" data-id="${p.id}" aria-label="Lihat detail ${p.title}">
             <div class="card-photo"><img src="${p.image}" loading="lazy" alt="${p.title}"></div>
-            <div class="card-caption"><strong> ${p.title}</span></div>
+            <div class="card-caption"><strong>${p.jenis}</strong> - ${p.title}</span></div>
           </button>
         `;
         card.querySelector('.card-click').addEventListener('click', (e) => {
